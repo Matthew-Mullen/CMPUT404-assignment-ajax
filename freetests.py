@@ -49,6 +49,7 @@ class ServerTestCase(unittest.TestCase):
                         , "Code not 200!")
         if (r.status_code == 200):
             self.assertTrue(len(r.data) > 5, "No data?")
+        #print("1 works")
 
     def testUpdate(self):
         v = 'T'+str(random.randint(1,1000000))
@@ -64,7 +65,7 @@ class ServerTestCase(unittest.TestCase):
         r = self.app.get(('/entity/%s' % v))
         self.assertTrue(r.status_code == 200, "Code not 200!")
         self.assertTrue(json.loads(utf8(r.data)) == d, "D != r.data")
-
+        #print("2 works")
         
     def populateWorld(self):
         self.world = dict()
@@ -74,6 +75,7 @@ class ServerTestCase(unittest.TestCase):
             y = random.randint(1,480)
             c = random.choice(['red','green','blue'])
             self.world[v] = {'x':x,'y':y,'colour':c}
+        #print("3 works")
         return self.world
 
     def testWorld(self):
@@ -91,6 +93,7 @@ class ServerTestCase(unittest.TestCase):
         newworld = json.loads(utf8(r.data))
         for key in self.world:
             self.assertTrue(self.world[key]  == newworld[key], "Key %s" % key)
+        #print("4 works")
 
 
         

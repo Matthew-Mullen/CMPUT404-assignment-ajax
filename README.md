@@ -13,3 +13,5 @@ Contributors / Licensing
 Generally everything is LICENSE'D under the Apache 2 license by Abram Hindle and Matthew Mullen.
 
 
+Cute bear watching you play Image from:
+https://images5.alphacoders.com/727/727256.jpg
