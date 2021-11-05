@@ -322,7 +322,9 @@ function update() {
     //XXX: TODO Get the world from the webservice using a XMLHTTPRequest
     const curworld=function(responses){
         world=responses;
+	    // signal we can draw another frame
         drawNextFrame();
+	    // update frame
         drawFrame();
     }
     const url = '/world';
