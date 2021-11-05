@@ -20,7 +20,7 @@
 # remember to:
 #     pip install flask
 
-# Used this as a reference https://stackoverflow.com/questions/7907596/json-dumps-vs-flask-jsonify
+# Used this as a reference https://stackoverflow.com/questions/7907596/json-dumps-vs-flask-jsonify, https://stackoverflow.com/questions/39319070/is-from-flask-import-request-identical-to-import-requests
 
 import flask
 from flask import Flask, request, redirect
