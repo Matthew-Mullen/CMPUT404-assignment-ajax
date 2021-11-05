@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
-# Copyright 2013 Abram Hindle
+# Copyright 2013 Abram Hindle, Matthew Mullen
 # 
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,6 +20,7 @@
 # remember to:
 #     pip install flask
 
+# Used this as a reference https://stackoverflow.com/questions/7907596/json-dumps-vs-flask-jsonify
 
 import flask
 from flask import Flask, request, redirect
